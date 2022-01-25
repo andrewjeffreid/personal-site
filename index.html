@@ -8,41 +8,82 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="grid-container">
-        <nav>
-            <div class="andrew-site">Andrew Reid's Personal Website, 2021</div>
-            <ul class = "linklist">
-                <li><a class="toplink" href="mailto:ajr8575@stern.nyu.edu">Email</a></li>
-                <li><a class="toplink" href="https://github.com/andrewjeffreid" target="_blank">Github</a></li>
-                <li><a class="toplink" href="https://www.linkedin.com/in/andrew-reid-93b807206/" target="_blank">LinkedIn</a></li>
-                <li><a id="endlink" class="toplink" href="andrewreid_resume.pdf" download=>Resume</a></li>
-            </ul>
-        </nav>
-        <div class="section1">
-            <img src="headshot.jpeg" alt="headshot" width=100% >
-            <h1>Andrew Reid</h1>
-            <p>Finance Student, NYU Stern School of Business</p>
+    <nav>
+        <ul>
+            <li><a class="navigation_item" href="mailto:ajr8575@stern.nyu.edu">Email</a></li>
+            <li><a class="navigation_item" href="https://github.com/andrewjeffreid" target="_blank">GitHub</a></li>
+            <li><a class="navigation_item" href="https://www.linkedin.com/in/andrew-reid-93b807206/" target="_blank">LinkedIn</a></li>
+            <li><a class="navigation_item" href="andrewreid_resume.pdf" download=>Resume</a></li>
+        </ul>
+    </nav>
+    <main>
+        <p id="greeting">Hello,<br>I'm Andrew.</p>
+        <div id='grid-container1'>
+            <div>
+                <img src="headshot.jpeg" alt="headshot">
+            </div>
+            <div id='about'>
+                <h2>ABOUT ME</h2>
+                <p>I'm currently a student-athlete at NYU Stern School of Business. I play baseball, and I'm double majoring in Finance and Computer Science. My professional interests are investment banking, quant trading, and deep learning. I was born and raised in Sugar Land, TX, and I like to build new things.</p>
+            </div>
         </div>
-        <div class="section2">
-            <h2>About</h2>
-            <p>I'm a finance and computer science major at New York University where I'm also a pitcher on the baseball team. Living in New York City, I connect with many awesome creators and personalities, many of whom have become my closest friends.</p>
-            <p>Much of my recent interest has involved machine learning and AI, but I also enjoy fishing, lifting weights, and country music.</p>
-            <h2>Work</h2>
-            <p>My first job was for a paintball company in Richmond, TX. I was also a lifeguard at the local pool during that time, but things really began to change when I moved to New York and started doing work for Andor.</p>
-            <p>Andor was unlike anything I'd seen. We were throwing businesses and ideas at the wall and seeing what stuck (primarily in the e-commerce space). I was constantly creating and multitasking.</p>
+        <div id='grid-container2'>
+            <div id='work'>
+                <h2 class='title'>WHAT I DO</h2>
+                <h3>Experience</h3>
+                <p id='work'>For the past year, I've held a business development role at Andor: a venture studio that builds companies using a unique incubation model to create, and sometimes fail, at lightning pace. I am constantly creating and multitasking.</p>
+                <h3>Projects</h3>
+                <p>Check out what I've built.</p>
+                <a href='https://github.com/andrewjeffreid/deep-learning-projects' target='_blank'class="bodylink">Deep Learning Projects</a>
+                <p>A repository with a few of my deep learning projects.</p>
+                <a href='https://github.com/andrewjeffreid/point-and-figure-charting' target="_blank" class="bodylink">Point and Figure Charting</a>
+                <p>This program generates the point and figure chart for a given company over its past year. It uses the Yahoo Finance API to pull real-time data.</p>
+                <a href='https://github.com/andrewjeffreid/Blackjack' target="_blank" class="bodylink">Blackjack</a>
+                <p>This is a simple Blackjack game built in python.</p>
+            </div>
+            <div class='container'>
+                <div class='browser'>
+                    <div class="row">
+                        <div class="column left">
+                            <span class="dot" style="background:#ED594A;"></span>
+                            <span class="dot" style="background:#FDD800;"></span>
+                            <span class="dot" style="background:#5AC05A;"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="content">
+                        <p>
+                            <span>&nbsp;1&nbsp;</span><br>
+                            <span>&nbsp;2&nbsp;</span>I do a lot of programming in<br>
+                            <span>&nbsp;3&nbsp;</span>Python, and I work a lot with:<br>
+                            <span>&nbsp;4&nbsp;</span><br>
+                            <span>&nbsp;5&nbsp;</span>&nbsp;&nbsp;&nbsp;NumPy<br>
+                            <span>&nbsp;6&nbsp;</span>&nbsp;&nbsp;&nbsp;Pandas<br>
+                            <span>&nbsp;7&nbsp;</span>&nbsp;&nbsp;&nbsp;MatPlotLib<br>
+                            <span>&nbsp;8&nbsp;</span>&nbsp;&nbsp;&nbsp;Tensorflow/Keras<br>
+                            <span>&nbsp;9&nbsp;</span><br>
+                            <span>10&nbsp;</span>I'm also experienced in HTML, CSS,<br>
+                            <span>11&nbsp;</span>Javascript, Java, and SQL.<br>
+                            <span>12</span><br>
+                            <span>13</span><br>
+                            <span>14</span><br>
+                            <span>15</span><br>
+                            <span>16</span><br>
+                            <span>17</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="section3">
-            <h2>Projects</h2>
-            <a href='https://github.com/andrewjeffreid/deep-learning-projects' target='_blank'class="bodylink">Deep Learning Projects</a>
-            <p>A repository with a few of my deep learning projects.</p>
-            <a href='https://github.com/andrewjeffreid/point-and-figure-charting' target="_blank" class="bodylink">Point and Figure Charting</a>
-            <p>This program generates the point and figure chart for a given company over its past year. It uses the Yahoo Finance API to pull real-time data.</p>
-            <a href='https://github.com/andrewjeffreid/Blackjack' target="_blank" class="bodylink">Blackjack</a>
-            <p>This is a simple Blackjack game built in python.</p>
+        <div class="personal">
+            <h3>Personal</h3>
+            <p>In addition to baseball, I really enjoy saltwater fishing. I workout everyday and stay active, but I also play videogames in my free time. I love the movies and TV—big Sopranos fan. Currently watching Yellowstone.</p>
         </div>
-        <div class="section4">
-            <h2>Friends</h2>
-            <ul class="bodylinklist">
+    </main>
+    <footer id="grid-container3">
+        <div>
+            <ul>
+                <h3>Friends</h3>
                 <li><a href="https://andor.ai/" target="_blank" class="bodylink">Andor.ai</a></li>
                 <li><a href="https://www.athleteswarehouse.com/" target="_blank" class="bodylink">Athletes Warehouse</a></li>
                 <li><a href="https://chasealbright.com/" target="_blank" class="bodylink">chasealbright.com</a></li>
@@ -50,19 +91,19 @@
                 <li><a href="https://matthoffman.myportfolio.com/" target="_blank" class="bodylink">Mediology</a></li>
                 <li><a href="https://www.velouniversity.com/" target="_blank" class="bodylink">VeloU</a></li>
             </ul>
-            <h2>Favorite Content</h2>
-            <ul class="bodylinklist">
-                <li><a href="http://aw-blog.com/return-to-sport/sport-psychology/invisible-man/" target="_blank" class="bodylink">The Invisible Man</a></li>
-                <li><a href="https://sahillavingia.com/work" target="_blank" class="bodylink">No Meetings, No Deadlines, No Full-Time Employees</a></li>
-                <li><a href="https://www.npr.org/sections/money/2016/03/04/469247400/episode-688-brilliant-vs-boring?utm_campaign=storyshare&utm_source=twitter.com&utm_medium=social" target="_blank" class="bodylink">Brilliant vs. Boring</a></li>
-                <li><a href="https://www.npr.org/sections/money/2019/01/09/683715261/episode-690-all-in" target="_blank" class="bodylink">All In</a></li>
-                <li><a href="https://www.npr.org/sections/money/2010/06/08/127563433/the-tuesday-podcast-the-million-dollar-microsecond" target="_blank" class="bodylink">The Million-Dollar Microsecond</a></li>
-                <li><a href="https://one.npr.org/?sharedMediaId=659611359:659630272" target="_blank" class="bodylink">Short Shrift For Short Sellers</a></li>
+        </div>
+        <div>
+            <ul>
+                <h3>Favorite Content</h3>
+                <li><a href="http://aw-blog.com/return-to-sport/sport-psychology/invisible-man/" target="_blank">The Invisible Man</a></li>
+                <li><a href="https://sahillavingia.com/work" target="_blank">No Meetings, No Deadlines, No Full-Time Employees</a></li>
+                <li><a href="https://www.npr.org/sections/money/2019/01/09/683715261/episode-690-all-in" target="_blank">All In</a></li>
+                <li><a href="https://www.npr.org/sections/money/2010/06/08/127563433/the-tuesday-podcast-the-million-dollar-microsecond" target="_blank">The Million-Dollar Microsecond</a></li>
                 <li><a href='https://books.google.com/books/about/Point_and_Figure_Charting.html?id=xAKWdFB8cS4C&source=kp_book_description' target="_blank" class="bodylink">Point and Figure Charting</a><em> The Essential Application for Forecasting and Tracking Market Prices</em> By Thomas J. Dorsey</li>
                 <li><a href='https://www.oreilly.com/library/view/hands-on-machine-learning/9781492032632/' target='_blank' class='bodylink'>O'Reilly Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow, 2nd Edition</a> By Aurélien Géron</li>
                 <li><a href='https://youtu.be/xFFs9UgOAlE?t=1350' target="_blank"class='bodylink'>CS50 Lecture by Mark Zuckerberg</a></li>
             </ul>
         </div>
-    </div>
+    </footer>
 </body>
 </html>

@@ -1,159 +1,262 @@
+/* General */
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     list-style: default;
     text-decoration: none;
-
+    font-family: Avenir;
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
-    color: #444;
+h2 {
+    font-size: 24px;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    border: 1px solid black;
+    box-shadow: -3px 3px;
+    padding: 7px 14px 5px 14px;
+    background-color: white;
+    color: #1b0e30;
+    font-weight: bold;
 }
 
-#grid-container {
-      display: grid;
-      width: 100%;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-template-rows: 30px 1fr;
+h2:hover {
+    transform: translate(3px, -3px);
+    box-shadow: -6px 6px;
 }
 
-h1, h2 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
-    color: black;
+h3 {
+    color: #643da3;
+    font-size: 20px;
+    font-weight: bold;
 }
 
-a.bodylink {
+a:hover {
     text-decoration: underline;
-    color: #5C6D73;
 }
 
-a.bodylink:hover {
-    opacity: .5;
-}
-
-p {
-    color: #444;
-    line-height: 15px;
-    margin-bottom: 15px;
-}
-
-ul.bodylinklist {
-    list-style: none;
-    line-height: 15px;
-    margin-bottom: 15px;
-}
+/* Nav Bar */
 
 nav {
-    grid-column: 1 / span 4;
-    border-bottom: 1px solid #ccc;
-    line-height: 30px;
-}
-
-.andrew-site {
-    color: #444;
-    margin-left: 8px;
-    display: inline;
+    height: 75px;
+    background-color: #1b0e30;
 }
 
 nav ul {
-    float: right;
-  }
-  
+    text-align: center;
+    list-style: none;
+}
+
 nav ul li {
     display: inline;
 }
 
-nav ul li a#endlink {
-    margin: 0;
+nav ul li a {
+    line-height: 75px;
+    margin: 3%;
+    color: #f6e9ff;
 }
 
-nav ul li a.toplink {
-    color: #444;
-    padding: 8px 8px 7px 8px;
-    margin: 0 -4px 0 0;
-    border-left: 1px solid #ccc;
+body {
+    background-color: #f6e9ff;
 }
 
-nav ul li a.toplink:hover {
-    background-color: #f7f7f7;
+/* Greeting */
+
+#greeting {
+    font-size: 36px;
+    margin-left: 50px;
+    margin-top: 50px;
+    font-weight: bold;
+    color: #1b0e30;
 }
 
-.section1 {
-    margin: 40px 20px 40px 40px;
+/* About Section */
+
+img {
+    width: 200px;
+    margin: 50px;
+    border: 1px solid black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.section2, .section3 {
-    margin: 40px 20px 40px 0;
+img:hover {
+    transform: translate(5px, -5px);
+    box-shadow: -5px 5px;
 }
 
-.section4 {
-    margin: 40px 40px 40px 0;
+#about {
+    grid-column: span 2;
 }
 
-/* Responsive layout */
-@media (max-width: 800px) {
-    #grid-container {
-        display: grid;
-        width: 100%;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 154px 1fr;
-    }
+#grid-container1 {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+}
 
-    nav {
-        border-bottom: none;
-    }
+#grid-container1 h2 {
+    margin: 50px 0px 40px 50px;
+}
 
-    nav ul {
-        float: none;
-      }
+#grid-container1 p {
+    margin-left: 50px;
+    margin-right: 50px;
+    color: #1b0e30;
+    line-height: 24px;
+}
 
-    nav ul li a.toplink {
-        padding: 0 0 0 8px;
+/* Work Section */
+
+#grid-container2 {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 40px;
+}
+
+#work p {
+    margin: 0px 50px 10px 50px;
+    line-height: 24px;
+}
+
+#work h2 {
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+#work h3 {
+    margin-left: 50px;
+    margin-top: 40px;
+}
+
+#work a {
+    margin-left: 50px;
+    color: #573a6d;
+    text-decoration: underline;
+}
+
+/* The Browser Window */
+
+    .browser {
+        background-color: #212121;
+        border-radius: 12px;
+        width: 300px;
+        height: 300px;
         display: block;
-        line-height: 30px;
-        margin-left: 0px;
-        border-left: none;
-        border-bottom: 1px solid #ccc;
-        border-top: 1px solid #ccc;
-        margin: -1px 0 0 0;
+        overflow-x: hidden;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 150px;
+        box-shadow: 0 4px 8px 0 rgb(133, 133, 133), 0 6px 20px 0 rgb(128, 128, 128);
+    }
+  
+    /* Container for columns and the top "toolbar" */
+    .row {
+        padding: 5px;
+        background: #3d3d3d; 
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+    }
+  
+    /* Three dots */
+    .dot {
+        margin-top: 4px;
+        margin-left: 4px;
+        height: 12px;
+        width: 12px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+    }
+    
+    /* Page content */
+
+    .content {
+        padding: 5px;
     }
 
-    nav ul li a#endlink {
-        margin-top: -1px;
+    .content p {
+        color: white;
+        font-family: monospace;
     }
 
-    nav ul li#endlink {
-        margin-top: -1px;
+    .content span {
+        color: grey;
+        font-family: monospace;
+    }
+
+.personal {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.personal p {
+    margin-bottom: 50px;
+    line-height: 24px;
+}
+
+/* Footer */
+
+#grid-container3 {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    background-color: #1b0e30;
+}
+
+footer ul {
+    list-style: none;
+    margin: 50px 50px 50px 50px;
+}
+
+footer ul li {
+    color: #f6e9ff; 
+}
+
+footer ul li a, em {
+    color: #f6e9ff;
+}
+
+/* Break Points */
+
+@media (max-width: 700px) {
+    #grid-container1 {
+        grid-template-columns: 1fr;
+    }
+
+    #grid-container1 h2 {
+        margin-top: 0px;
+    }
+
+    #grid-container2 {
+        grid-template-columns: 1fr;
+    }
+
+    #grid-container3 {
+        grid-template-columns: 1fr;
+        padding-top: 50px;
+    }
+
+    .browser {
+        margin-top: 40px;
+    }
+
+    footer ul {
+        margin-top: 0px;
     }
 }
 
-@media (max-width: 600px) {
-    #grid-container {
-        display: grid;
-        width: 100%;
-        grid-template-columns: 1fr;
-        grid-template-rows: 154px;
-    }
+@media (min-width: 1200px) {
 
-    nav {
-        border-bottom: none;
-        grid-column: 1;
+    main {
+        width: 1200px;
+        margin: auto;
     }
-
-    .section1, .section2, .section3, .section4 {
-        margin: 0 10px 0 10px;
-        width: 280px;
-    }
-
-    .section1 {
-        margin-top: 10px;
-    }
-
-    .section4 {
-        margin-bottom: 10px;
-    }
+    
 }
