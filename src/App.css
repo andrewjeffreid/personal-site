@@ -1,0 +1,15 @@
+html, body {
+    height: auto;
+}
+
+.App {
+    height: 100vh;
+}
+
+#light {
+    background-color: white;
+}
+
+#dark {
+    background-color: #121212;
+}

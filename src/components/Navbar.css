@@ -1,0 +1,41 @@
+nav {
+    display: flex;
+    padding: 8px 16px;
+    border-bottom: 1px solid #efefef ;
+    font-weight: 500;
+    align-items: baseline;
+}
+
+#dark nav {
+    border-bottom: 1px solid #404040;
+}
+
+nav ul a {
+    color: #454545;
+    text-decoration: none;
+    padding: 0px 8px;
+    font-size: 14px;
+}
+
+#dark nav ul a {
+    color: #b3b3b3;
+}
+
+nav button {
+    
+    font-weight: 500;
+    background-color: #596ab0;
+    color: white;
+    border-radius: 0.25rem;
+    border: none;
+    padding: 8px 16px;
+    margin-left: auto;
+}
+
+nav ul a:hover {
+    color: #3b5fc0;
+}
+
+#dark nav ul a:hover {
+    color: #ffffff;
+}
