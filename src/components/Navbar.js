@@ -15,7 +15,7 @@ export default function Navbar({ theme, toggleTheme }) {
                 <Link to="/blog">Blog</Link>*/}
                 <a href="https://github.com/andrewjeffreid" target="_blank" rel="noreferrer">Github</a>
                 <a href="https://www.linkedin.com/in/andrew-reid-93b807206/" target="_blank" rel="noreferrer">LinkedIn</a>
-                <a href={resume} download>Resume</a>
+                <a href={resume} target="_blank" rel="noreferrer">Resume</a>
             </ul>
             <button onClick={e => handleClick(e)}>{theme === "light" ? "Dark Mode": "Light Mode"}</button>
         </nav>
